@@ -1,4 +1,7 @@
 npx create-react-app react-typescript-materialui --template typescript
+npm install react-router-dom@6
+npm install @mui/material @emotion/react @emotion/styled
+npm install @mui/icons-material
 
 git init
 git remote add origin https://github.com/wildici/crud-react-typescript-materialui.git
@@ -6,3 +9,5 @@ git branch -m dev
 git add --all
 git commit -m "[refactoring] removing unnecessary files"
 git push -u origin dev
+
+git checkout dev
