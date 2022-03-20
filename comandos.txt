@@ -1,1 +1,8 @@
 npx create-react-app react-typescript-materialui --template typescript
+
+git init
+git remote add origin https://github.com/wildici/crud-react-typescript-materialui.git
+git branch -m dev
+git add --all
+git commit -m "[refactoring] removing unnecessary files"
+git push -u origin dev
