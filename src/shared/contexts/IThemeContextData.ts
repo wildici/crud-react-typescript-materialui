@@ -1,4 +1,4 @@
 export interface IThemeContextData {
-    themeName: "light" | "dark";
+    themeName: 'light' | 'dark';
     toggleTheme: () => void;
 }
