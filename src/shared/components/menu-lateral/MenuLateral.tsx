@@ -1,7 +1,7 @@
 import { Avatar, Drawer, useTheme, Divider, List, ListItemButton, ListItemIcon, ListItemText, Icon, useMediaQuery } from '@mui/material';
 import { Box } from '@mui/system';
 import profile from '../../../assets/img/profile.jpeg';
-import { useDrawerContext } from '../../contexts';
+import { useDrawerContext, useLanguageContext } from '../../contexts';
 
 export const MenuLateral: React.FC =  ({ children }) => {
   
@@ -9,6 +9,7 @@ export const MenuLateral: React.FC =  ({ children }) => {
   const smDown = useMediaQuery(theme.breakpoints.down('sm'));
 
   const { isDrawerOpen, toggleDrawerOpen } = useDrawerContext();
+  const { language, toggleLanguage } = useLanguageContext();
   
   return (
     <>
@@ -20,6 +21,11 @@ export const MenuLateral: React.FC =  ({ children }) => {
           </Box>
 
           <Divider />
+
+          {/* <select onChange={e => toggleLanguage(e)}>
+            <option value="pt-br">Português</option>
+            <option value="en-us">Inglês</option>
+          </select> */}
 
           <Box flex={1}>
             <List component='nav'>
